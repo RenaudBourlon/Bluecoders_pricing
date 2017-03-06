@@ -1,0 +1,182 @@
+<html>
+	<head>
+		<meta http-equiv="content-type" content="text/html; charset=utf-8" />
+		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+		<link rel="stylesheet" type="text/css" href="style.css">
+
+		<title>Pricing</title>
+		<meta http-equiv="content-language" content="fr" />
+	</head>
+
+	<body>
+
+
+
+		<div id="wrapper">
+
+
+			<div class="options centre container">
+			<div class="row">	
+				<div class="centre">
+					<div class="bouton col-md-6 col-md-offset-2 col-sm-12 col-xs-12">
+						<p class="left"><span v-bind:class="{ active: month }" style="text-shadow: 1px 0 0 black;">Monthly</span><span v-bind:class="{ active: year }">Monthly</span></p>						
+						<label class="switch left">
+					 		<input type="checkbox" v-on:click="monthToYear" >
+					 		<div class="slider round"></div>
+						</label>
+						<p class="left"><span v-bind:class="{ active: year }" style="text-shadow: 1px 0 0 black;">Annually</span><span v-bind:class="{ active: month }">Annually</span></p>						
+					</div>
+				</div>
+			</div>	
+
+			<div class="row">
+					<div class="offrebasique col-md-2 col-sm-6 col-xs-12 clearboth" id="community">
+						<h2><span class="txtcommunity"><span class="souligne">C</span>OMMUNITY</span></h2>
+						<p class="price">FREE</p>
+						<ul>
+							<li><p class="pricenumber">10,000</p>
+							<p class="grey">RECORDS</p></li>
+							<li><p class="pricenumber">100,000</p>
+							<p class="grey">OPERATIONS/month</p></li>
+							<li><p class="grey">SUPPORT</p>
+							<p class="black"><span class="forum">Forum</span></p></li>
+						</ul>
+						<div id="logocommunity">
+							<p>Community plans must include the logo :</p>
+							<img src="images/teterenaud.png">
+						</div>
+					</div>
+
+					<div class="offrebasique col-md-2 col-sm-6 col-xs-12" id="starter">
+						<h2><span class="txtstarter"><span class="souligne">S</span>TARTER</span></h2>
+						<p class="price"><sup>$</sup><span v-bind:class="{ active: month }">59</span><span v-bind:class="{ active: year }">42</span><span class="grey"> /month</span></p>
+
+						<ul>
+							<li><p class="pricenumber">100,000<span class="green">*</span></p>
+							<p class="grey">RECORDS</p></li>
+							<li><p class="pricenumber">1,000,000<span class="green">*</span></p>
+							<p class="grey">OPERATIONS /month</p></li>
+							<li><p class="grey">SUPPORT</p>
+							<p class="black">Forum + Email</p></li>
+						</ul>
+						<p class="overquota">*Overquota Allowed<br /><a href="#"> compare plans</a></p>
+						
+					</div>
+
+					<div class="offrebasique col-md-2 col-sm-6 col-xs-12" id="growth">
+						<h2><span class="txtgrowth"><span class="souligne">G</span>ROWTH</span></h2>
+						<p class="price"><sup>$</sup><span v-bind:class="{ active: month }">299</span><span v-bind:class="{ active: year }">242</span><span class="grey"> /month</span></p>						
+						<ul>
+							<li><p class="pricenumber">1,000,000<span class="green">*</span></p>
+							<p class="grey">RECORDS</p></li>
+							<li><p class="pricenumber">10,000,000<span class="green">*</span></p>
+							<p class="grey">OPERATIONS /month</p></li>
+							<li><p class="grey">SUPPORT</p>
+							<p class="black">Forum + Email</p></li>
+							<li><p class="grey">ANALYTICS</p>
+							<p class="black">30 days</p></li>
+							<li><p class="grey">INFRASTRUCTURE</p>
+							<p class="black">Distributed Search Network</p></li>
+						</ul>
+						<p class="overquota">*Overquota Allowed<br /><a href="#"> compare plans</a></p>
+
+					</div>
+
+					<div class="offrebasique col-md-2 col-sm-6 col-xs-12" id="pro">
+						<h2><span class="txtpro"><span class="souligne">P</span>RO</span></h2>
+						<p class="price"><sup>$</sup><span v-bind:class="{ active: month }">999</span><span v-bind:class="{ active: year }">942</span><span class="grey"> /month</span></p>						
+						<ul>
+							<li><p class="pricenumber">5,000,000<span class="green">*</span></p>
+							<p class="grey">RECORDS</p></li>
+							<li><p class="pricenumber">50,000,000<span class="green">*</span></p>
+							<p class="grey">OPERATIONS /month</p></li>
+							<li><p class="grey">SUPPORT</p>
+							<p class="black">Forum + Email + Live Chat</p></li>
+							<li><p class="grey">ANALYTICS</p>
+							<p class="black">90 days</p></li>
+							<li><p class="grey">INFRASTRUCTURE</p>
+							<p class="black">Distributed Search Network</p></li>
+						</ul>
+						<p class="overquota">*Overquota Allowed<br /><a href="#"> compare plans</a></p>
+					</div>
+
+
+
+
+
+				<div class="offrespeciale col-md-4 col-sm-12 col-xs-12" id="enterprise">
+						<h2><span class="txtenterprise left"><span class="souligne">E</span>NTERPRISE</span></h2><img class="infinite" src="images/icones/infini.png" class="left">
+						<p class="grey"> <span class="mediumgrey">from $3990/month</span>
+						<br />Billed annually</p>
+						<ul>
+							<li><img src="images/icones/dedicated_Infrastructure.png" alt="Dedicated infrastructure" class="icones"/><p class="white">Dedicated infrastructure</p></li>
+							<li><img src="images/icones/dedicated_Solutions_Engineer_Customer_Success_Manager.png" alt="Dedicated Solutions Engineer & Customer Success Manager" class="icones"/><p class="white">Dedicated Solutions Engineer & Customer Success Manager</p></li>
+							<li><img src="images/icones/premium_Onboarding.png" alt="Premium onboarding" class="icones"/><p class="white">Premium onboarding</p></li>
+							<li><img src="images/icones/contextual_Search.png" alt="Contextual search" class="icones"/><p class="white">Contextual search</p></li>
+							<li><img src="images/icones/sandbox_Environment.png" alt="Sandbox environment" class="icones"/><p class="white">Sandbox environment</p></li>
+							<li><img src="images/icones/monitoring_API.png" alt="Monitoring API" class="icones"/><p class="white">Monitoring API</p></li>
+							<li><img src="images/icones/analytics_API.png" alt="Analytics API" class="icones"/><p class="white">Analytics API</p></li>
+							<li><img src="images/icones/9999_SLA.png" alt="99.99% SLA" class="icones"/><p class="white">99.99% SLA</p></li>
+							<li><img src="images/icones/custome_Terms_Of_Use.png" alt="Custom terms of use" class="icones"/><p class="white">Custom terms of use</p></li>
+						</ul>
+				</div>
+			</div>	
+			</div>
+
+
+
+
+
+
+
+		</div>
+
+
+		<script src="https://unpkg.com/vue"></script>
+			<script type="text/javascript">
+				var wrapper = new Vue({
+				  el: '#wrapper',
+				  data: {
+				    month: false,
+				    year: true
+				  },
+				  methods: {
+				    monthToYear: function () {
+				      this.month = !this.month
+				      this.year = !this.year
+				    }
+				  }
+				})
+			</script>
+		
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+	</body>
+
+
+
+	</html>
